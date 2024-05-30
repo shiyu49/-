@@ -8,6 +8,14 @@
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
+        <form action="/search" method="GET">
+        <form class="form-inline my-2 my-lg-0 ml-2">
+              <div class="form-group">
+                <input type="text" class="form-control mr-sm-2" name="search" placeholder="キーワードを入力">
+              </div>
+                <input type="submit" value="検索" class="btn btn-info">
+        </form>
+
         <a href="/posts/create">create</a>
         <div class='posts'>
             @foreach ($posts as $post)
@@ -34,5 +42,6 @@
                 }
             }    
         </script>
+        
     </body>
 </html>
